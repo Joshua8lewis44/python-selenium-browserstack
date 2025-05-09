@@ -5,19 +5,18 @@
 # BROWSERSTACK_ACCESS_KEY as env variables
 userName: joshualewis_x4hBur
 accessKey: n3pNTjBpDsHW1vs6PBd6
+framework: behave
+app: bs://sample.app
 platforms:
-  - os: Windows
-    osVersion: 10
-    browserName: Chrome
-    browserVersion: 120.0
-  - os: OS X
-    osVersion: Monterey
-    browserName: Safari
-    browserVersion: 15.6
-  - deviceName: iPhone 8
-    osVersion: 11
-    browserName: safari
-    deviceOrientation: portrait
+  - platformName: ios
+    deviceName: iPad Pro 13 2024
+    platformVersion: 17
+  - platformName: ios
+    deviceName: iPhone XS
+    platformVersion: 15
+  - platformName: ios
+    deviceName: iPhone 8
+    platformVersion: 11
 browserstackLocal: true
 buildName: browserstack-build-1
 projectName: BrowserStack Sample
